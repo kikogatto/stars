@@ -1,0 +1,20 @@
+//import "bower_components/bootstrap/less/bootstrap.less";
+@import "fixBootstrap.less";
+//@import "../../assets/directives/backgroundMenu/backgroundMenu.less";
+//@import "../../components/airports/airports.less";
+
+.bar-nav, .bar-tab, .bar-footer-secondary {
+	background-color: @navbar-default-bg;
+	color:@navbar-default-color;
+	i, h1 {
+	    color:@navbar-default-color;
+	}
+}
+
+.bar-footer-secondary {
+	height:0px;
+}
+
+.add-something .bar-footer-secondary{
+	transition: max-height 0.2s ease-in;
+}
