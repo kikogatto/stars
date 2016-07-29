@@ -10,3 +10,9 @@ test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/jasmine
     - npm test
+
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: stars-feedback
