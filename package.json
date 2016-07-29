@@ -4,7 +4,7 @@
   "description": "The awesome feedback app",
   "repository": "https://github.com/kikogatto/stars.git",
   "scripts": {
-    "setup":"rm -rf .tmp && mkdir -p .tmp/assets/styles",
+    "setup": "rm -rf .tmp && mkdir -p .tmp/assets/styles",
     "test": "karma start",
     "watch-less": "nodemon --watch src/**/*.less --ext less --exec 'npm run build-less'",
     "build-less": "lessc src/assets/styles/stars.less .tmp/assets/styles/stars.css",
@@ -17,7 +17,6 @@
     "angular-resource": "1.5.8",
     "angular-animate": "1.5.8",
     "angular-sanitize": "1.5.8",
-
     "font-awesome": "4.6.3"
   },
   "devDependencies": {
@@ -26,10 +25,13 @@
     "grunt": "1.0.0",
     "jasmine": "2.4",
     "jasmine-core": "^2.4.1",
+    "jasmine-reporters": "^2.2.0",
     "jshint-stylish": "~0.1.3",
     "karma": "^1.1.2",
     "karma-chrome-launcher": "^1.0.1",
     "karma-jasmine": "^1.0.2",
+    "karma-junit-reporter": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.1",
     "less": "2.5.3",
     "lite-server": "^1.3.1",
     "load-grunt-tasks": "~0.2.0",
